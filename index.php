@@ -24,7 +24,7 @@
                             $result_turmas = "SELECT * FROM turmas ";
                             $resultado_turmas = mysqli_query($conn, $result_turmas);
                             while($row_turmas = mysqli_fetch_assoc($resultado_turmas)){ ?>
-                                <option value="<?php echo $row_turmas['id']; ?>"><?php echo $row_turmas['descricao']; ?></option> <?php
+                                <option value="<?php echo $row_turmas['codigo']; ?>"><?php echo $row_turmas['descricao']; ?></option> <?php
                             }
                         ?>
                 </select><br><br>
